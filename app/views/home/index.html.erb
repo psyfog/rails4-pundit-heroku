@@ -1,5 +1,5 @@
 <h3>Home</h3>
-<% if !current_user.nil? and current_user.admin? %>
+<%# if !current_user.nil? and current_user.admin? %>
   <% @users.each do |user| %>
   <div class="row"><div class="span2" style="border-bottom-style: dashed; border-width: 5px; width: 50%; padding: 20px;">
     <p>User: <%= user.name %>
@@ -8,4 +8,4 @@
     <p>Role: <%= user.role unless user.role.nil? %></p>
 </div></div>
   <% end %>
-<% end %>
+<%# end %>
