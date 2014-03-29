@@ -38,6 +38,11 @@ GEM
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -71,6 +76,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_magick (3.7.0)
+      subexec (~> 0.2.1)
     minitest (5.3.1)
     multi_json (1.9.2)
     orm_adapter (0.5.0)
@@ -129,6 +136,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    subexec (0.2.3)
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -157,11 +165,13 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  carrierwave (= 0.10.0)
   coffee-rails (~> 4.0.0)
   devise
   hub
   jbuilder (~> 2.0)
   jquery-rails
+  mini_magick
   pg
   pundit
   quiet_assets

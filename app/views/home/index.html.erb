@@ -1,6 +1,11 @@
 <h3>Home</h3>
 <% if !current_user.nil? and current_user.admin? %>
   <% @users.each do |user| %>
-    <p>User: <%=link_to user.email, user %> Role: <%= user.role unless user.role.nil? %></p>
+  <div class="row"><div class="span2" style="border-bottom-style: dashed; border-width: 5px; width: 50%; padding: 20px;">
+    <p>User: <%= user.name %>
+    <p><%= image_tag(user.avatar.thumb, :align => 'left') if user.avatar? %></p>
+    <p><%=link_to user.email, user %></p>
+    <p>Role: <%= user.role unless user.role.nil? %></p>
+</div></div>
   <% end %>
 <% end %>

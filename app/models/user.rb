@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
     self.role ||= :user
   end
 
+  mount_uploader :avatar, AvatarUploader
 end
