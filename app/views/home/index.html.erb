@@ -3,7 +3,7 @@
   <% @users.each do |user| %>
   <div class="row"><div class="span2" style="border-bottom-style: dashed; border-width: 5px; width: 50%; padding: 20px;">
     <p>User: <%= user.name %>
-    <p><%= image_tag(user.avatar.thumb, :align => 'left') if user.avatar? %></p>
+    <p><%= image_tag(user.avatar, :align => 'left') if user.avatar? %></p>
     <p><%=link_to user.email, user %></p>
     <p>Role: <%= user.role unless user.role.nil? %></p>
 </div></div>
