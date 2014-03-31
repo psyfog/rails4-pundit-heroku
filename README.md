@@ -5,3 +5,6 @@ demo : http://psyrails.herokuapp.com
 =========
 Amazon s3 bucket for avatars uploader via CarrierWave gem added
 
+
++++++++++
+Things to do: Image processing, hide secrets
