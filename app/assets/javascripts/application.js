@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+$('.carousel').carousel({
+  interval: 1000
+})
+//@betdream

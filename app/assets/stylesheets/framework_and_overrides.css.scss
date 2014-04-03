@@ -8,8 +8,8 @@ img {
   }
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
-  }
+  font-size: 25;
+    }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -78,4 +78,100 @@ section {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-xs;
+}
+
+
+.navbar-inverse {
+  
+  .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+}
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+//carusel
+
+
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 1;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+    color: #000;
+    background: #FFF;
+    border: 3px solid #222;
+  }
+  
+  .carousel-caption{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:20px;
+    
+       h3{
+          color:#b5b5b5;
+          text-shadow:1px 1px 1px #eee;
+          font-family: 'Flamenco', cursive;
+          
+        }
+  }
+  
+}
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+  height: 100%;
+ 
+}
+
+.item:nth-child(1) {
+  background: #c0392b;
+}
+
+.item:nth-child(2) {
+  background: #222;
+}
+
+.item:nth-child(3) {
+  background:#16a085;
+}
+
+.item:nth-child(4) {
+  background:#f39c12;
+}
+.item:nth-child(5) {
+  background:#3498db;
 }

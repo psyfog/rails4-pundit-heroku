@@ -15,7 +15,10 @@ gem 'devise'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
-gem 'thin'
+gem 'unicorn'
+gem 'capistrano'
+gem 'rvm-capistrano'
+gem "unicorn-rails"
 #uploader s3
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick'
