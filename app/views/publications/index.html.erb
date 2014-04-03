@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>Listing articles</h1><%= @publication.length %>
  
 <table>
   <tr>
@@ -6,7 +6,7 @@
     <th>Text</th>
   </tr>
  
-  <% @publications.each do |publication| %>
+  <% @publication.each do |publication| %>
     <tr>
       <td><%= publication.title %></td>
       <td><%= publication.text %></td>

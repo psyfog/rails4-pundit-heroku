@@ -1,6 +1,6 @@
 class PublicationsController < ApplicationController
-def new
-end
+	def new
+	end
  def create
   @publication = Publication.new(publication_params)
  
@@ -8,10 +8,10 @@ end
   redirect_to @publication
   end
 def show
-  @article = Publication.find(params[:id])
+  @publication = Publication.find(params[:id])
 end
 def index
-  @publication = Publications.all
+  @publication = Publication.all
 end
 private
   def publication_params
