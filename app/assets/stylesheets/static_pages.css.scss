@@ -36,13 +36,13 @@
   }
   
   .carousel-caption{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size:20px;
     
        h3{
-          color:#b5b5b5;
+          color: white;
           text-shadow:1px 1px 1px #eee;
-          font-family: 'Flamenco', cursive;
+          font-family: 'Ubuntu Condensed', cursive;
           
         }
   }
@@ -58,21 +58,4 @@ body,
  
 }
 
-.item:nth-child(1) {
-  background: #c0392b;
-}
 
-.item:nth-child(2) {
-  background: #222;
-}
-
-.item:nth-child(3) {
-  background:#16a085;
-}
-
-.item:nth-child(4) {
-  background:#f39c12;
-}
-.item:nth-child(5) {
-  background:#3498db;
-}

@@ -1,48 +1,11 @@
 <div class="row">
-<div class="span4"></div><div class="span4"><div id="Mycarousel" class="carousel slide carousel-fade" style="height: 300px; width: 100%;">
-  <ol class="carousel-indicators">
-    <li data-target="#slide" data-slide-to="0" class="active"></li>
-    <li data-target="#slide" data-slide-to="1"></li>
-    
-   </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-       <div class="carousel-caption">
-    <h3>TITLE</h3>
-    <p>Lorem ipsum dolor sid amed...</p>
-  </div>
-    </div>
-    <div class="item">
-        <div class="carousel-caption">
-    <h3>TITLE</h3>
-  </div>
-    </div>
-    <div class="item">
-       <div class="carousel-caption">
-    <h3>TITLE</h3>
-    <p>Lorem ipsum dolor sid amed...</p>
-  </div>
-    </div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left " href="#Mycarousel" data-slide="prev">
-    &lsaquo;</a>
-  <a class="carousel-control right" href="#Mycarousel" data-slide="next">
-     &rsaquo;</a>
-</div></div>
-</div>
-<h3>Home</h3>
-<%# if !current_user.nil? and current_user.admin? %>
-  <% @users.each do |user| %>
-  <div class="row"><div class="span2" style="border-bottom-style: dashed; border-width: 5px; width: 50%; padding: 20px;">
+<div class="col-md-6 col-sm-6"><% @users.each do |user| %>
+  <div><div class="userdiv" style="border-bottom-style: dashed; border-width: 5px; width: 50%; padding: 20px;"> <p><%= image_tag(user.avatar, :align => 'left') if user.avatar? %></p>
     <p>User: <%= user.name %>
-    <p><%= image_tag(user.avatar, :align => 'left') if user.avatar? %></p>
+    
     <p><%=link_to user.email, user %></p>
     <p>Role: <%= user.role unless user.role.nil? %></p>
 </div></div>
-  <% end %>
-<%# end %>
+  <% end %></div>
 
+</div>

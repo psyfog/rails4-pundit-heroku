@@ -13,6 +13,13 @@ end
 def index
   @publication = Publication.all
 end
+def destroy
+  #@publication = Publication.destroy
+    @publication = Publication.find(params[:id])
+    @publication.destroy
+    redirect_to(:back)
+    flash[:error] = "Post was destroyed!"
+end
 private
   def publication_params
     params.require(:publication).permit(:title, :text)
